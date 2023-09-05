@@ -1,0 +1,13 @@
+.help {
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.help a:link, a:visited {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3e567c;
+}
