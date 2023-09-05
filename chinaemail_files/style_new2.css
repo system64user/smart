@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*全局样式*/
+* {padding:0px; margin:0px;word-wrap:break-word;word-break:break-all;}
+html,body{height:100%;}
+html {margin:0px; padding:0px;}
+body {font-size:12px; font-family:Tahoma, Geneva, sans-serif;line-height:18px; margin:0px; padding:0px; background:#ffffff;}
+ul, li, ol, li { margin:0px; padding:0px; list-style:none; }
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, form { margin:0px; padding:0px; font-weight:normal; font-size:12px; }
+img { border:0px; margin:0px; padding:0px; vertical-align:top; }
+table { border:0px; }
+.c{clear:both;}
+/*为了消除选中时的虚线框*/
+a{
+	bblr:expression(this.onFocus=this.blur());/*IE使用*/
+	outline-style:none;/*FF使用*/
+}
+
+#warp{width:1080px; margin:0 auto;height:662px; position:relative;}
+.warp_cn{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_tw{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_en{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_kr{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_jp{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_j_cn{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_j_tw{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_j_en{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_j_kr{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.warp_j_jp{background:url(../images/warp_cn.png) 0 60px no-repeat;}
+.logo{ height:80px; position:absolute; left:40px; top:10px;}
+.logo img{ max-height:80px; max-width:200px;}
+#main{ position:absolute; top:165px; left:349px; width:382px; height:422px; margin:0 auto; overflow:hidden; z-index:555;}
+
+/*登录提示*/
+.prompt{ background:#fff; padding:6px 15px; line-height:18px; color:#ff0b0b;}
+.prompt p{ text-align:left; font-size:13px; font-weight: bold; word-break:normal;}
+.nopro{ height:18px; padding:6px;}/*提示隐藏时高度*/
+
+.login_mail{margin:30px 0 28px 0;clear:both;height:36px;line-height:36px;}
+.login_mail_l{ display:none;}
+
+/*文本框*/
+.ico-uid{ background:url(../images/text_icon_1.png) no-repeat 5px 7px; background:url(../images/text_icon_1.png) no-repeat 5px 7px\9; width:32px; height:36px; display:block; position: absolute; top:1px; left:5px;}
+.ico-pwd{ background:url(../images/text_icon_2.png) no-repeat 5px 7px; background:url(../images/text_icon_2.png) no-repeat 5px 7px\9; width:32px; height:36px; display:block; position: absolute; top:1px; left:5px;}
+.ico-valida{ background:url(../images/text_icon_3.png) no-repeat 5px 7px; background:url(../images/text_icon_3.png) no-repeat 5px 7px\9; width:32px; height:36px; display:block; position: absolute; top:1px; left:5px;}
+
+input.mail_text{float:left;margin:0 6px 0 8px;width:148px;padding-left:24px;height:36px;line-height:36px\9;border:#ccc solid 1px; font-family:Arial, Helvetica, sans-serif; font-size:14px; background:#fff; color:#222222;}
+.login_pw input.mail_text{ width:302px;}
+input.auth{width:200px;}
+input.mail_text_2{ width:302px;}
+
+input.mail_focus{/* background:#ffffe1;*/}/*当鼠标点中文本框时背景调用的样式*/
+.login_mail span{ float:left; display:block; height:36px;line-height:36px; font-size:14px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;width:148px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#103b57; word-wrap:normal;}
+.login_pw{clear:both; margin-bottom:28px; height:36px;line-height:36px;}
+.login_auth{clear:both; margin-bottom:18px; height:36px;line-height:36px;}
+
+.login_auth a{ display:block; float:right; margin-right:10px;}
+#authcode_img{ height:36px;}
+
+/*SSL安全登录*/
+.login_ssl{height:28px; overflow:hidden; padding:0 10px;}
+.login_ssl input{ vertical-align:middle;}
+.login_ssltext{margin-left:5px; color:#242424;}
+
+.login_ssl span.entry{ color: #117aca; float:right; margin-right:0; text-align:right; padding-left:20px; position:absolute; right:28px; bottom:20px;}
+.login_ssl span.entry a{color:#117aca; text-decoration:none;font-size:14px;}
+.login_ssl span.entry a:hover{text-decoration:underline;}
+.log_mar span.entry{ color: #117aca; float:right; margin-right:0; text-align:right; padding-left:20px; position:absolute; right:28px; bottom:20px;}
+.log_mar span.entry a{color:#117aca; text-decoration:none;font-size:14px;}
+.log_mar span.entry a:hover{text-decoration:underline;}
+
+/*btn*/
+.login_btn{padding-left:10px;}
+.login_btn span{ display:inline-block;}
+.login_btn span input.btnSty{background:url(../images/button_bg.png) no-repeat;border:none;width:327px;height:42px;line-height:42px; text-align:center; cursor:pointer;color:#fff;margin-top:5px;font-size:16px; font-family:Tahoma, Geneva, sans-serif; font-weight:bold;}
+.login_btn span input.btn_focus{background:url(../images/btn_focus.png) no-repeat;}/*当鼠标划过时获取的样式*/
+.login_btn span.entry{ color: #305F79; float:right; line-height: 48px; margin-top: 5px; margin-right:0; text-align:right;}
+.login_btn span.entry a{color:#00456c; text-decoration:none;font-size:14px;}
+.login_btn span.entry a:hover{text-decoration:underline;}
+
+/*地址版权*/
+#footer{ position:absolute; top:670px; left:41px; width:1000px; text-align:center;margin:0 auto; padding-bottom:10px; color:#666;clear:both; font-size:14px;}
+#footer p{line-height:16px;padding-bottom:6px;}
+#footer span{ display:block;width:250px;height:20px;line-height:20px; text-align:center;margin:0 auto;}
+
+
+/*极速版登录界面*/
+.pro_color{color:#1e1e1e;}
+/*邮局后台管理登录*/
+.title_gl{ display:none;}
+.title_gl span.tit{ display:block;font-size:14px;color:#034567; height:32px;margin-left:15px;padding-left:15px;font-weight:bold;}
+.empty{}
+
+
+#login_form{ margin:0 auto; width:347px;}
+
+
+.login_mail,.login_pw,.login_auth{ position:relative;}
+.placeholder{color: #b7b7b7; left:32px; font-size:14px; position: absolute;}
+.showPlaceholder .placeholder { cursor: text;}
+
+
+
+
+/*右上角文字链接*/
+.pop_menu_box{ position:absolute; right:60px; width:450px; top:40px; color:#ccc; text-align:right; font-size:14px; display:block; z-index:99999; line-height:20px;}
+.pop_menu{ float:right; display:inline-block; vertical-align: middle; position:relative;}
+.pop_menu_box a{ color:#186d92; text-decoration:none; font-family:"宋体"; font-size:12px; line-height:24px;}
+
+.listBox{ position:absolute; background:#1681ad; border:1px solid #1681ad; width:148px; display:block; z-index:99999; padding:1px; right:-10px; top:24px;}
+.listBox li a{ color:#ffffff; display:inline-block; line-height:30px; width:140px; text-align:left; padding:0 0 0 8px; text-decoration:none;}
+.listBox li a:hover{ background:#ffffff; color:#117aca;}
+.listBox_2{ width:88px; right:-10px;}
+.listBox_2 li a{ width:80px;}
+.listBox_3{ width:150px; right:0px}
+.zzy_code{ background:url(../images/zzy_code.gif) no-repeat; width:150px; height:150px; display:inline-block;}
+.ico_open{ margin-left:5px; vertical-align: middle; cursor:pointer;}
+.u_line{ padding:0 8px; float:right;}
+.communication{ float:right; display:inline-block; vertical-align: middle;}
+
+/*二维码-下载*/
+.list_download{ width:650PX; padding-bottom:10px; overflow:hidden;}
+.list_download li{ float:left; background:#f5f5f5; width:290px; text-align:left; margin:10px 0 0 10px; padding:10px;}
+
+.ico_z1,.ico_z2,.ico_z3,.ico_z4{ float:left; width:50px; height:50px; display:block; margin-right:10px;}
+.ico_z1{ background:url(../images/ico_z1.png) no-repeat;}
+.ico_z2{ background:url(../images/ico_z2.png) no-repeat;}
+.ico_z3{ background:url(../images/ico_z3.png) no-repeat;}
+.ico_z4{ background:url(../images/ico_z4.png) no-repeat;}
+
+.BM_iPhone{ float:left; background:url(../images/BM_iPhone.gif) no-repeat; width:76px; height:76px; display:inline-block; margin-right:12px;}
+.BM_Android{ float:left; background:url(../images/BM_Android.gif) no-repeat; width:76px; height:76px; display:inline-block; margin-right:12px;}
+.BM_WP{ float:left; background:url(../images/BM_WP.gif) no-repeat; width:75px; height:75px; display:inline-block; margin-right:12px;}
+.BQ_iPhone{ float:left; background:url(../images/BQ_iPhone.gif) no-repeat; width:76px; height:76px; display:inline-block; margin-right:12px;}
+.BQ_Android{ float:left; background:url(../images/BQ_Android.gif) no-repeat; width:76px; height:76px; display:inline-block; margin-right:12px;}
+
+.tit_z1{ font-family:"微软雅黑"; font-size:14px; color:#333;}
+.tit_z2{ font-size:12px; color:#666; display:block; margin-bottom:6px;}
+.listBox li a.btn_z{ height:22px; width:96px; border:1px solid #ec8030; display:inline-block; background:#ec8030; text-align:center; font-size:12px; line-height:22px; padding:0; color:#ffffff;}
+.listBox li a.btn_z:hover{ border:1px solid #e86402;background:#e86402; }
+.dow_box_h{ height:126px;}
+
+.a_sty{ float:right; color:#00456c; text-decoration:none;}
+
+
+/*弹出框*/
+#popup_container{position:absolute;width:400px;top:30%;left:30%;height:auto;z-index:999;text-align:left;}
+#popup_title {background:url(../images/pop_header.gif) no-repeat;height:29px;line-height:29px;color:#15428B;padding:0 10px;position:relative;}
+#popup_title button {background:url(../images/ico_close.gif) no-repeat;width:15px;height:15px;border:0;cursor:pointer;position:absolute;top:7px;right:7px;}
+#popup_content {background:#fff;border:1px solid #97bad8; border-top:0;}
+#popup_message {background:url(../images/ico_notice.gif) 20px 15px no-repeat; padding:15px 0 15px 60px;}
+#popup_message p {line-height:25px;width:315px;word-wrap:break-word;*word-break:break-all;}
+#popup_panel {padding:10px 0; text-align:center;}
+#popup_panel input {background:url(../images/btn.gif) no-repeat;height:23px;line-height:23px;width:75px;text-align:center;color:#333;margin-right:20px;cursor:pointer;border:0;}
+.pop_frame{position:fixed;*position:absolute;background:#000;filter:Alpha(Opacity=50);opacity:0.1;width:100%;height:100%;top:0;left:0;z-index:999;}
