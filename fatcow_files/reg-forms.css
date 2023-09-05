@@ -1,0 +1,47 @@
+
+
+/* Basic Registration Styles */
+	.reg { overflow: hidden; padding: 7px; margin-bottom: 1.5em; 
+		background-color: #fefbd7; background-color: ; 
+		border: 1px #ccc solid; border-color: #9dca0f; border-color: ; 
+		color: #000; 
+		}
+	#main-bd .reg h2,
+	.reg h2 { margin: 0 0 13px; font-weight: bold; padding-bottom: 7px; 
+		color: #9dca0f; color: ; 
+		border-bottom: 1px #ccc dotted; border-color: #9dca0f; border-color: ; 
+		font-size: 108%; font-size: ; 
+		}
+	.highlight-h2 h2 { margin: -7px -7px 0; padding: 7px; 
+		background-color: #9dca0f; background-color: ; 
+		border-bottom: 1px #ccc solid; border-color: #9dca0f; border-color: ; 
+		color: #fff; color: ; 
+		}
+	.reg ol { margin: 1em 0 0; padding-left: 0; overflow: hidden; }
+		.reg ol li { list-style: none; margin-bottom:1em; }
+	.reg .required { color: #c00; font-weight: bold; }
+	.reg label, .reg legend { display: block; margin: 3px 0; padding: 0; }
+	.reg input { margin: 0 5px 0 0; }
+	.reg fieldset { border: 0; margin: 3px 0 0; padding: 0; }
+	.radio label { display: inline; margin-right: 1em; }
+
+/* Gray Styles */
+	.reg.gray { background-color: #eee; border: 1px #ccc solid; }
+	#main-bd .reg.gray h2,
+	.reg.gray h2 { color: #333; border-bottom: 1px #ccc dotted; }
+	.gray.highlight-h2 h2 { background-color: #ddd; border-bottom: 1px #ccc solid; }
+				
+/* Internal */
+	.internal { min-height: 73px; border-color: #f1a44a; background: #f3f2da url(/images/text/internal.gif) no-repeat left center; padding-left: 2.5em }
+
+/* Two Column */
+	.reg.two-col li { width: 49%; float: left; }
+	.two-col.left-label label, .two-col.left-label legend { width: 40%; }
+	
+/* Left-aligned Labels */
+	.left-label label, .left-label legend { display: inline-block; width: 33%; text-align: right; margin-right: 5px; }
+	.left-label legend { float: left; margin-top: 0; }
+	.left-label .radio label { display: inline; text-align: right; margin-right: 1em; width: auto; }
+
+/* IE7 Fix */
+	.two-col.left-label legend, .left-label legend, .left-label fieldset { *width: 100%; *text-align: center; *display: block; }
