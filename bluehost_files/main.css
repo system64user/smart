@@ -1,0 +1,32 @@
+#container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 0;
+}
+h3 {
+    color: #5C5C5C;
+}
+.nav-links.inactive {
+    color: #5C5C5C;
+}
+.login {
+    margin-bottom: 4em;
+    background: rgba(255,255,255,0.8);
+    border-radius: 3px;
+    box-shadow: 0 0 12px 0 rgba(172,172,172,0.5), 0 0 18px 0 rgba(178,178,178,0.5);
+    padding: 60px 10px;
+}
+.login_form .login-input-wrapper label {
+    color: #5C5C5C;
+}
+.domain_selection {
+    border: solid 1px #4473C7;
+    border-radius: 5px;
+}
+.maestro-ribbon .maestro-login-btn {
+color:#3575B9;
+border-color:#3575B9;
+}

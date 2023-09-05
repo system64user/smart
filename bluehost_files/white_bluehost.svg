@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <svg width="22px" height="22px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g fill-rule="nonzero">
+                <g>
+                    <g fill="#FFF">
+                        <polygon id="Rectangle-path" points="0 0.047826087 6.05533597 0.047826087 6.05533597 6.15362319 0 6.15362319"></polygon>
+                        <polygon id="Rectangle-path" points="7.81027668 0.047826087 13.8656126 0.047826087 13.8656126 6.15362319 7.81027668 6.15362319"></polygon>
+                        <polygon id="Rectangle-path" points="15.6363636 0.047826087 21.6916996 0.047826087 21.6916996 6.15362319 15.6363636 6.15362319"></polygon>
+                        <polygon id="Rectangle-path" points="0 7.95507246 6.05533597 7.95507246 6.05533597 14.0608696 0 14.0608696"></polygon>
+                        <polygon id="Rectangle-path" points="7.81027668 7.95507246 13.8656126 7.95507246 13.8656126 14.0608696 7.81027668 14.0608696"></polygon>
+                        <polygon id="Rectangle-path" points="15.6363636 7.95507246 21.6916996 7.95507246 21.6916996 14.0608696 15.6363636 14.0608696"></polygon>
+                        <polygon id="Rectangle-path" points="0 15.8623188 6.05533597 15.8623188 6.05533597 21.9681159 0 21.9681159"></polygon>
+                        <polygon id="Rectangle-path" points="7.81027668 15.8623188 13.8656126 15.8623188 13.8656126 21.9681159 7.81027668 21.9681159"></polygon>
+                        <polygon id="Rectangle-path" points="15.6363636 15.8623188 21.6916996 15.8623188 21.6916996 21.9681159 15.6363636 21.9681159"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
