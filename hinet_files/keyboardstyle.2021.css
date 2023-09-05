@@ -1,0 +1,239 @@
+/****************************************************************
+Style sheet of dynamic virtual keyboard
+*****************************************************************/
+
+input:focus
+{
+	background-color: #f3f5fc;
+	border: 1px solid #3364e0;
+}
+
+#keyboard { 
+	position: absolute; 
+	display: none; 
+	width: 587px; 
+	right: 20px;
+    top: 307px;
+	padding: 8px 5px; 
+	margin: 0px;
+	background-color:white;
+	box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  	border: solid 1px #e6eef9;  
+	border-radius: 5px;
+}
+
+#close-img{
+    display: block;
+    /*float:right; */
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    height: 30px;
+	width:30px;
+}
+
+#backspace{	
+ 	width: 50px; 
+	height: 32px;
+	text-align: left; 
+	padding-left:5px;
+    font-size:1.3em;
+    font-weight:bolder;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	margin-top: 5px; 
+	color: #737373;
+	transition: 0.3s;
+}
+#backspace:hover{
+	background-color: #f2f2f2;
+}
+
+ 
+#row0_shift, #row1_shift, #row2_shift, #row3_shift {
+	display: none;
+}
+
+#row0, #row0_shift {
+    padding-top: 5px; 
+	padding-left: 5px; 	
+}
+
+#row1, #row1_shift { 
+	padding-left: 55px; 
+}
+
+#row2, #row2_shift { 
+	padding-left: 75px; 
+}
+
+#row3, #row3_shift { 
+	padding-left: 5px; 
+}
+
+#shift {	
+	font-family: Arial, Helvetica, sans-serif;
+	width: 90px; 
+	height: 32px;	
+	margin:	0px;
+    font-size:	1.3em;
+	text-align: left; 
+	border: none;
+    background-color: #fff;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	margin-top: 5px; 
+	color: #737373;
+	margin-right: 2px;
+	margin-left: 2px;
+	transition: 0.3s;
+}
+#shift:hover{
+	background-color: #f2f2f2;
+}
+
+#shifton {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 90px; 
+	height: 32px;
+	background-color: #e56b6f;
+	margin:0px;
+    font-size:1.3em;
+	text-align: left; 
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	margin-top: 5px; 
+	color: #fff;
+	margin-right: 2px;
+	margin-left: 2px;
+	border: none;
+}
+
+.butW {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #737373; 
+	width: 32px;
+	height: 32px;
+	padding-left: 0px; 
+	padding-right: 0px; 
+    font-size: 1.3em;
+    font-weight:bolder;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 5px;
+	transition: 0.3s;
+
+}
+.butW:hover{
+	background-color: #f2f2f2;
+}
+
+.butI {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #737373; 
+	width: 32px;
+	height: 32px;
+	padding-left: 0px; 
+	padding-right: 0px; 
+	margin-right: 2px;
+	margin-left: 2px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	transition: 0.3s;
+
+}
+.butI:hover{
+	background-color: #f2f2f2;
+}
+
+.butS {
+	font-family: Arial, Helvetica, sans-serif;
+	width:32px;
+	height:32px;
+	padding-left:0px; 
+    padding-right:0px; 
+   	margin-right: 2px;
+	margin-left: 2px;
+    color: #fff;
+    background-color: #3465e0;
+    font-size:1.3em;
+    font-weight:bolder;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	border: none;
+	transition: 0.3s;
+}
+
+.butS_hover{
+	width:32px;
+	height:32px;
+ 	padding-left:0px; 
+  	padding-right:0px; 
+  	margin-right: 2px;
+	margin-left: 2px;
+    font-size:1.3em;	
+	font-weight:bolder;
+    background-color: #1e356c;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+#shuffleDiv {
+   padding: 5px; 
+   background-color: #f3f5fc;
+}
+
+.butF {
+	font-family: Arial, Helvetica, sans-serif;
+	width:140px;
+	height:32px;
+	padding-left:0px; 
+	margin:0px;
+    font-size:1.1em;
+    font-weight:bolder;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(78, 128, 208, 0.15) 0px 0px 5px;
+	border-radius: 5px;
+	color: #737373;
+
+
+
+}
+
+.butOK {
+	width:85px;
+	height:32px;
+	padding-left:0px; 
+    padding-right:0px; 
+    margin:0px;
+    color: #eee;
+    background-color:#B94FFF;
+    font-size:1.3em;
+    font-weight:bolder;
+}
+
+.butOK_hover{
+	width:85px;
+	height:32px;
+ 	padding-left:0px; 
+  	padding-right:0px; 
+  	margin:0px;
+    font-size:1.3em;	
+	font-weight:bolder;
+    background-color:#5500DD;
+    color: #EFFFFF;
+}
