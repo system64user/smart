@@ -1,0 +1,177 @@
+
+
+:focus, a:focus {
+  outline-style: dotted;
+  outline-width: thin;	
+}
+
+
+ .body_bg {
+
+ 	background:url(/surgeweb/0381908356/2/shared/img/gradient_huge.jpg) repeat-x;
+ }
+ .body_bg2 {
+
+  	background:#A0BFE8 url(/surgeweb/0381908356/2/shared/img/gradient_huge.jpg) repeat-x;
+ }
+
+ body {
+	text-align:center;
+ }
+ #login_outer{
+ 	text-align:left;
+ 	width:450px;
+	margin: 0 auto;
+	margin-top:75px;
+ } 
+ #login_panel_pre{
+	padding:8px;
+
+	background: #007;
+	color:white;
+	text-align:center;
+ }
+ #login_panel{
+
+    background:#DBEBFF;
+  	border-left:1px solid #5a82b8;  
+  	border-right:1px solid #5a82b8;  
+ 	padding:10px;
+	text-align:center;
+ } 
+ #login_panel table{
+	margin: 0 auto;
+ }
+ #login_panel_post{
+
+	background: #007; 
+	color:white;
+	padding:5px;
+	text-align:center;
+ }
+ 
+ #login_title_comment{
+ 	display:none;
+ }
+ #login_title{
+ 	font-size:1em;;
+ }
+
+
+ body, table {
+	font-family:Arial;
+	font-size:14px;
+ }
+ #login_title{
+  	font-weight:bold;
+  	font-size:22px;
+ }
+ #cmd_login{
+  	width:120px; 
+  }
+ #error{
+ 	color:red;
+ 	margin-top:5px;
+ 	margin-bottom:15px;
+ 	font-weight:bold;
+ 	font-size:11px;
+ }
+ #error .surgeweb{
+ 	font-size:14px;
+ }
+
+ 
+ .hidden{
+ 	display:none;
+ }
+
+ .login_link_small{
+
+	color:white;
+	font-size:0.8em;
+	text-decoration:none;
+ }
+  .login_link_small:hover{
+ 	text-decoration:underline;
+ }
+  .boldred{
+  	color:red;font-weight:bold;font-style:italic;
+  }
+   .red{
+  	color:red;
+  } 
+  
+  #rcol_login_outer{
+  	text-align:center;
+  	position:absolute;
+  	right:0;top:0;
+  	border:1px solid #5a82b8;
+  	width:120px;height:480px;
+  	background:#f7f7f7;
+  }
+  #rcol_login_iframe{
+  	background:white;
+  	width:120px;height:480px;
+  }
+
+  #account_links{
+  	text-align:right;
+  }
+  #account_links a{
+	color:black;
+	font-size:0.9em;
+	text-decoration:none;  	
+  }
+  #account_links a:hover{
+   	text-decoration:underline;
+  }
+  
+
+
+.pannable {
+	overflow:scroll;
+	-ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    -webkit-overflow-scrolling:touch;
+}
+.pannable::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.drop_indicator{
+	display:inline-block;
+	padding:20px;
+	border: 2px dashed red;
+}
+	
+ 	#choose_custom{
+		position:absolute;background:white;
+	}
+	
+	
+@media only screen and (min-width: 768px) {
+	#choose_custom{
+		bottom:5%;left:5%; right:5%; 
+	}
+}
+@media only screen and (max-width: 767px) {
+	#choose_custom{
+		bottom:0%;left:0%; right:0%; 
+	}
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#choose_custom{
+		bottom:0%;left:0%; right:0%; 
+	}
+}
+
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
