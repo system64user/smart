@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@media only screen and (max-width: 360px)  {
+	#step1 .text_content{
+		height: 80vw;
+		overflow-y: scroll;
+	}
+	 .grecaptcha-badge {
+            /*visibility: hidden;*/
+            z-index:999;
+            bottom:150px !important;
+         /*   margin-bottom:150px;*/
+        }
+	
+}
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+  .grecaptcha-badge {
+        /*visibility: hidden;*/
+        z-index:999;
+        bottom:150px !important;
+     /*   margin-bottom:150px;*/
+    }
+	.redirect_cs_login_btn{
+		margin-left: auto;
+	}
+	.input_error {
+		line-height: 9.25vw;
+		padding: 0;
+		font-size: 3.3vw;
+	}
+	.error_code {
+		margin-left: 0;
+	}
+	#loginform input[type=text],
+	input[type=number],
+	input[type=password] {
+		line-height: 11.11vw;
+		height: 11.11vw;
+		background-color: #f2f2f2;
+		-moz-border-radius: 1vw;
+		-webkit-border-radius: 1vw;
+		border-radius: 1vw;
+		padding: 0 3vw;
+		min-width: 0;
+		width: 100%;
+		font-size: 3.7vw;
+		background-color: #f2f2f2;
+
+	}
+
+	input[type=text] {
+		background-color: #f2f2f2;
+	}
+
+	input[type=password] {
+		line-height: 8vw;
+		height: 8vw;
+	}
+
+	.popup {
+		width: 90%;
+	}
+
+	#form_activate_account,
+	#form_phone_code,
+	#form_email_code,
+	#form_step1,
+	#form_step2,
+	#form_step3a,
+	#form_step3b {
+		display: inline;
+	}
+
+	.form-gp {
+		flex-flow: column;
+	}
+
+	.form_label {
+		margin-bottom: 1vw;
+		margin-left: 0px;
+		line-height: 6vw;
+	}
+
+	.field_wrapper {
+		width: 88%;
+	}
+	#form_phone_code input.general,
+	#form_email_code input.general {
+		width: 100%;
+	}
+	input.general {
+		width: 100%;
+	}
+
+	#step2 .text_content,
+	#step3b .text_content,
+	#step4 .text_content,
+	#step5 .text_content {
+		text-align: center;
+		line-height: 5vw;
+	}
+
+	#phone_code .text_content,
+	#email_code .text_content {
+		text-align: center;
+		line-height: 5vw;
+
+	}
+
+	.big_font {
+		line-height: 6vw;
+	}
+
+	.still_not_received {
+		margin-left: 0;
+	}
+
+	#form_phone_code .field_wrapper,
+	#form_email_code .field_wrapper {
+		display: flex;
+		flex-flow: column;
+		width: 88%;
+	}
+
+	.still_not_received {
+		margin-top: 0;
+	}
+
+	.remarktext {
+		padding: 3vw 0;
+	}
+
+	#activate_account_popup ul li {
+		display: flex;
+		flex-flow: column;
+		/* align-items:center;  */
+		padding: 1vw;
+	}
+
+	#activate_account_popup .fieldList ul li label {
+
+		font-size: 3vw;
+		line-height: 7vw;
+	}
+
+	#activate_account_popup .title_bar {
+		font-size: 3vw;
+	}
+
+	.close {
+		right: 2vw;
+	}
+	#personal_info_popup .title_bar{
+		font-size: 3.5vw;
+	}
+	#personal_info_popup .popup_content{
+	    padding: 20px;
+	}
+	#personal_info_popup .text_content{
+		height: 100vw;
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 640px) {
+ .grecaptcha-badge {
+        /*visibility: hidden;*/
+        z-index:999;
+        bottom:150px !important;
+     /*   margin-bottom:150px;*/
+    }
+	#loginform input[type=text],
+	input[type=number],
+	input[type=password] {
+		line-height: 3.125vw;
+		height: 3.125vw;
+		border-radius: 0.39063vw;
+		padding: 0 0.78125vw;
+		min-width: 19.53125vw;
+		background-color: #f2f2f2;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px #d4d4d4 solid;
+		-moz-box-shadow: 0 0 0 transparent;
+		-webkit-box-shadow: 0 0 0 transparent;
+		box-shadow: 0 0 0 transparent;
+
+	}
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 800px) {
+  .grecaptcha-badge {
+        /*visibility: hidden;*/
+        z-index:999;
+        bottom:150px !important;
+     /*   margin-bottom:150px;*/
+    }
+	.input_error {
+		line-height: 3.125vw;
+		padding: 0 0.78125vw;
+		font-size: 1.25vw;
+	}
+
+	#loginform input[type=text],
+	input[type=number],
+	input[type=password] {
+		line-height: 40px;
+		height: 40px;
+		-moz-border-radius: 0.39063vw;
+		-webkit-border-radius: 0.39063vw;
+		border-radius: 0.39063vw;
+		padding: 0 0.78125vw;
+		min-width: 19.53125vw;
+		background-color: #f2f2f2;
+	}
+}
+
+@media only screen and (max-width: 9999999px) and (min-width: 1280px) {
+    .grecaptcha-badge {
+        z-index:999;
+        bottom:150px !important;
+    }
+	.input_error {
+		line-height: 40px;
+		padding: 0 10px;
+		font-size: 16px;
+	}
+
+	#loginform input[type=text],
+	input[type=number],
+	input[type=password] {
+		line-height: 40px;
+		height: 40px;
+		border-radius: 5px;
+		padding: 0 10px;
+		min-width: 250px;
+		background-color: #f2f2f2;
+	}
+}
+
+.input_error {
+	color: #e7627e !important;
+	background: url(/assets/images/icon/exclamation.svg) no-repeat left center;
+	/*background-repeat:;
+    background-position: center center;
+    vertical-align: top;*/
+	-moz-background-size: auto 60%;
+	-o-background-size: auto 60%;
+	-webkit-background-size: auto 60%;
+	background-size: auto 60%;
+	padding: 0 0 0 30px;
+}
+
+#loginform input[type=text],
+input[type=number],
+input[type=password] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px #d4d4d4 solid;
+	-moz-box-shadow: 0 0 0 transparent;
+	-webkit-box-shadow: 0 0 0 transparent;
+	box-shadow: 0 0 0 transparent;
+}
+
+.alertarea {
+	font-size: 16px;
+	padding: 0 8%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 0 30px 0;
+	color: #fff;
+	background-color: #e7627e;
+	border-radius: 5px;
+	display: none;
+	width: 100%;
+}
+
+.error{
+	color: #e7627e !important;
+	-moz-background-size: auto 60%;
+	-o-background-size: auto 60%;
+	-webkit-background-size: auto 60%;
+	background-size: auto 60%;
+	
+}
+.maintenancemsg{
+  color: #e7627e !important;
+  text-align:center;
+}
+
+
