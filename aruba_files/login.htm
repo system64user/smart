@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="login_data/css.css" rel="stylesheet" type="text/css">
+<link href="login_data/login.css" rel="stylesheet" type="text/css">
+<script src="login_data/dojo.js"></script>
+</head>
+<body>
+<div class="obsolete-page" style="display: none">
+	<div class="obsolete-header"></div>
+	<div class="obsolete-content">
+		<div class="obsolete-browser-title" data-i18n="obsolete_browser_title">Update your browser.</div>
+		<div class="obsolete-browser-subtitle" data-i18n="obsolete_browser_subtitle">You cannot continue using Webmail with your current browser.<br>Please update your browser or download one of the following:</div>
+		<div class="obsolete-browser-list">
+			<div class="obsolete-browser-item chrome">
+				<div class="obsolete-browser-item-title" data-i18n="obsolete_browser_chrome_title">Google Chrome</div>
+				<div class="obsolete-browser-item-subtitle" data-i18n="obsolete_browser_chrome_subtitle">For Windows, iOS, Linux <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">download Google Chrome</a></div>
+			</div>
+			<div class="obsolete-browser-item firefox">
+				<div class="obsolete-browser-item-title" data-i18n="obsolete_browser_firefox_title">Mozilla Firefox</div>
+				<div class="obsolete-browser-item-subtitle" data-i18n="obsolete_browser_firefox_subtitle">For Windows, iOS, Linux <a href="https://www.mozilla.org/it/firefox/" target="_blank" rel="noopener noreferrer">download Mozilla Firefox</a></div>
+			</div>
+			<div class="obsolete-browser-item safari">
+				<div class="obsolete-browser-item-title" data-i18n="obsolete_browser_safari_title">Safari</div>
+				<div class="obsolete-browser-item-subtitle" data-i18n="obsolete_browser_safari_subtitle">For iOS <a href="https://support.apple.com/it_IT/downloads" target="_blank" rel="noopener noreferrer">download Safari</a></div>
+			</div>
+			<div class="obsolete-browser-item opera">
+				<div class="obsolete-browser-item-title" data-i18n="obsolete_browser_opera_title">Opera</div>
+				<div class="obsolete-browser-item-subtitle" data-i18n="obsolete_browser_opera_subtitle">For Windows, iOS, Linux <a href="https://www.opera.com/it" target="_blank" rel="noopener noreferrer">download Opera</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="login-background" style="display: flex;">
+	<div class="main-block">
+		<div class="left-block">
+			<iframe src="login_data/left_block.htm" tabindex="-1" style="display: block;"></iframe>
+			<div class="left-block-image" style="display: none"></div>
+		</div>
+		<div class="right-block">
+			<div class="logo-block">
+				<div class="left-logo"></div>
+				<div class="right-logo"></div>
+			</div>
+			<div class="tab-switcher-block">
+				<div class="tab-buttons-block">
+					<button type="button" class="tab-button tab-1 hide-in-classic" data-i18n="title_tab_1" onclick="displayTab('1')">Webmail</button>
+					<button type="button" class="tab-button tab-2 hide-in-classic" data-i18n="title_tab_2" onclick="displayTab('2')">Manage mailboxes</button>
+				</div>
+				<button type="button" id="language-button" class="en">
+					<div class="language-flag">
+						<div id="menu_language"><ul><li dojoattrid="0"><button type="button" id="en">English</button></li><li dojoattrid="1"><button type="button" id="es">Español</button></li><li dojoattrid="2"><button type="button" id="it">Italiano</button></li></ul></div>
+					</div>
+					<div id="language_select">English</div>
+					<div class="menu-language-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 32 32" fill="#3f3f3f"><polygon points="2.002,10 16.001,24 30.002,10"></polygon></svg></div>
+				</button>
+			</div>
+			<div class="feedback-block">
+				<div class="feedback-icon"></div>
+				<div class="feedback-text" id="feedback-text"></div>
+			</div>
+			<div class="form-block">
+				<div class="form-tab tab-1" id="tab1">
+					<div data-i18n="form_title" class="form-title">Access your Webmail</div>
+					<input type="hidden" id="login_pid" name="PID" value="aruba">
+					<div class="input-container">
+						<div class="login-icon"></div>
+						<input type="text" id="login_default" name="login" data-i18n-placeholder="email" placeholder="Email">
+					</div>
+					<div class="input-container">
+						<div class="password-icon"></div>
+						<input type="password" id="password_default" name="PASSWD" value="" onkeypress="capLock(event,'capslock_detect');" data-i18n-placeholder="password" placeholder="Password">
+						<div class="password-icon-2" onclick="showPassword('password_default')"></div>
+					</div>
+					<div class="remember-me-block">
+						<label for="remember_me">
+							<input type="checkbox" id="remember_me" name="remember_me">
+							<div class="hide-in-classic" data-i18n="remember_me_label">Remember me</div>
+						</label>
+						<div data-i18n="reset_password" class="lost-password"><div class="link" onclick="lostPassword()">Forgotten your password?</div></div>
+					</div>
+					<div class="capslock-detect" id="capslock_detect">Caps Lock</div>
+					<div class="radio-button-block hide-in-classic">
+						<div class="radio-button-header" data-i18n="select_version">SELECT VERSION:</div>
+						<div class="radio-button-pane">
+							<div class="radio-button-cnt">
+								<input type="radio" name="webmail_version" id="new_webmail_version" value="0" checked="checked">
+								<label for="new_webmail_version">
+									<div class="radio-button-outer"><div class="radio-button-inner"></div></div>
+									<div class="radio-button-label" data-i18n="radio_smart">Smart</div>
+								</label>
+								<div class="test-sticker">
+									<div data-i18n="sticker_test">New</div>
+								</div>
+							</div>
+							<div class="radio-button-cnt">
+								<input type="radio" name="webmail_version" id="web2cs_version" value="1">
+								<label for="web2cs_version">
+									<div class="radio-button-outer"><div class="radio-button-inner"></div></div>
+									<div class="radio-button-label" data-i18n="radio_complete">Classic</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<button type="button" data-i18n="button_login" class="login-button" onclick="launchUser()">SIGN IN</button>
+					<div class="giga-text"><div data-i18n="giga_text"></div></div>
+				</div>
+				<div class="form-tab tab-2" id="tab2">
+					<div data-i18n="form_title_admin" class="form-title">Manage your mailboxes</div>
+					<div class="input-container">
+						<div class="login-icon"></div>
+						<div class="postmaster-div">postmaster@</div>
+						<input type="text" id="login_domain" name="domain" data-i18n-placeholder="domain" placeholder="domain to manage">
+					</div>
+					<div class="input-container">
+						<div class="password-icon"></div>
+						<input type="password" id="password_domain" name="PASSWD" value="" onkeypress="capLock(event,'capslock_detect_pm');" data-i18n-placeholder="password_postmaster" placeholder="Password">
+						<div class="password-icon-2" onclick="showPassword('password_domain')"></div>
+					</div>
+					<div class="remember-me-block">
+						<div data-i18n="lost_password_postmaster" class="lost-password"><a href="https://guide.hosting.aruba.it/email/email-modifica-ripristino-password/smarrimento-password-casella-postmaster-dominio.aspx" target="_blank" rel="noopener noreferrer">Forgotten your password?</a></div>
+					</div>
+					<div class="capslock-detect" id="capslock_detect_pm">Caps Lock</div>
+					<div class="radio-button-block hide-in-classic">
+						<div class="radio-button-header" data-i18n="select_version">SELECT VERSION:</div>
+						<div class="radio-button-pane">
+							<div id="postmaster_smart" class="radio-button-cnt">
+								<input type="radio" name="postmaster_version" id="new_postmaster_version" value="0" checked="checked">
+								<label for="new_postmaster_version">
+									<div class="radio-button-outer"><div class="radio-button-inner"></div></div>
+									<div class="radio-button-label" data-i18n="postmaster_radio_smart">Smart</div>
+								</label>
+								<div class="test-sticker">
+									<div data-i18n="sticker_test_manage">New</div>
+								</div>
+							</div>
+							<div id="postmaster_completa" class="radio-button-cnt">
+								<input type="radio" name="postmaster_version" id="postmaster_version" value="1">
+								<label for="postmaster_version">
+									<div class="radio-button-outer"><div class="radio-button-inner"></div></div>
+									<div class="radio-button-label" data-i18n="postmaster_radio_complete">Classic</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<button type="button" data-i18n="button_login_postmaster" class="login-button" onclick="launchAdmin()">SIGN IN</button>
+					<div class="pec-text"><div data-i18n="pec_text">Use the <span class="link" onclick="window.open('https://gestionemail.pec.it', null, 'noreferrer,noopener')">PEC control panel</span> to manage your PEC email accounts.</div></div>
+					<div class="giga-text"><div data-i18n="giga_text"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-block">
+		<div class="accessible-link" data-i18n="accessible_link"><a href="https://webmail.aruba.it/index.php?accessible=1" target="_parent">Accessible version</a></div>
+		<div class="text-footer" data-i18n="copyright">Copyright © 2023 Aruba S.p.A. - VAT No. 01573850516 - All rights reserved - <a href="https://www.aruba.it/informativa_arubaspa.pdf" target="_blank" rel="noopener noreferrer" class="link">Privacy policy</a></div>
+		<div class="text-footer" data-i18n="cookie_bot"><a href="https://www.aruba.it/cookie-policy.aspx?lang=it-IT" target="_blank" rel="noopener noreferrer" class="link">Cookie policy</a> - <a href="#" onclick="window.top.Cookiebot.renew();" class="link">Customize cookie preferences</a></div>
+	</div>
+	<div class="pec-dialog-overlay"></div>
+	<div class="pec-dialog-block">
+		<div class="pec-dialog-title">
+			<div class="pec-dialog-title-text" data-i18n="pec_dialog_title">Sign in to PEC Webmail</div>
+			<div class="pec-dialog-title-button" onclick="pecHideDialog()"></div>
+		</div>
+		<div class="pec-dialog-body">
+			<div class="pec-dialog-body-text" data-i18n="pec_dialog_text">Do you want to login to your PEC account?<br>Webmail for PEC accounts is on another page.</div>
+			<div class="pec-dialog-button-bar">
+				<div class="pec-dialog-button-ok" data-i18n="pec_dialog_button_login" onclick="pecRedirect()">SIGN IN TO PEC WEBMAIL</div>
+				<div class="pec-dialog-button-cancel" data-i18n="pec_dialog_button_cancel" onclick="pecHideDialog()">Cancel</div>
+			</div>
+		</div>
+	</div>
+</div>
+<form id="redirect" name="redirect" method="POST" target="_top">
+	<input type="hidden" name="xam" value="0">
+</form>
+<div id="feedback" class="feedback-cnt"><span data-i18n="feedback_text">Feedback?</span></div>
+<script src="login_data/login.js"></script>
+<script src="login_data/aes.js"></script>
+<script src="login_data/ads.js"></script><div id="dImsNXvlfN" style="display: none;"></div>
+<script src="login_data/capslock_detect.js"></script>
+<!-- Usabilla Combicode for aruba.it-->
+<!-- Begin Usabilla for Websites embed code -->
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if (!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t) {
+ f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};
+ a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+/*]]>{/literal}*/</script>
+
+
+</body></html>

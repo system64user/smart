@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<script src="login_data/dojo.js" djconfig="parseOnLoad: true, usePlainJson: true, locale: 'en'"></script>
+<script src="xfm_data/mystartup.js"></script>
+<script>
+	function setThemes() {
+		var mainFrame = top.mainFrame;
+		if (mainFrame) {
+			if (mainFrame.document.readyState == "complete") {
+				if (mainFrame.setThemeCombo &&
+					(mainFrame.document.getElementById("themeInput") || mainFrame.document.getElementById("themeCombo")) &&
+					mainFrame.location.href.indexOf("login.") != -1)
+				{
+					mainFrame.setThemeCombo();
+				}
+				return;
+			}
+		}
+		setTimeout(setThemes, 250);
+	}
+	if (typeof xfm === "undefined") {
+		dojo.registerModulePath("xandmail", "../../xandmail");
+		dojo.require("xandmail.xfm.Xfm");
+		xfm = new xandmail.xfm.Xfm();
+		dojo.addOnLoad(function() {
+			xfm.init(top.mainFrame, "");
+			setTimeout(setThemes, 250);
+		});
+	}
+</script>
+</head>
+<body>
+
+</body></html>
