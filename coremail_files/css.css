@@ -1,0 +1,616 @@
+/*
+ * Copyright (c) 2016 Mailtech.cn, Ltd. All Rights Reserved.
+ */
+
+@charset "iso-8859-1";
+html {
+    width:100%;
+    height:100%;
+    overflow: visible;
+}
+body {
+    position: relative;
+    height: 100%;
+    min-width:  720px;
+    min-height: 550px;
+    margin: 0;
+}
+body, table, select, input, button {
+    font-size: 12px;
+    font-family: '\5FAE\8F6F\96C5\9ED1', tahoma, arial, sans-serif;
+}
+body,select{background-color:#fff;}
+form{
+    margin:0;
+    padding:0;
+}
+a {
+    color: #555555;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+/*
+a span {
+    font-size: 12px;
+    color: #767676;
+}
+*/
+/*用于替换chrome默认input:-webkit-autofill样式(wlgq,google也这么坑）*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+}
+input::-ms-clear, input::-ms-reveal {
+    display:none;
+}
+:focus {
+    outline: none;
+}
+
+/* Head 区域 */
+.Head {
+    height: 70px;
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #515151;
+}
+.Head .Logo {
+    background: url(logo.png) no-repeat;
+    width:250px;
+    height:100%;
+    float:left;
+    cursor: pointer;
+}
+.Head .Links {
+    text-align:right;
+    float:right;
+    line-height: 70px;
+    padding-right: 50px;
+}
+.Head a {
+    padding-left: 20px;
+}
+
+/* Head 区域 */
+
+/* Main 区域 */
+
+#main {
+    height: 410px;
+    /*background: #3598db;*/
+    background: #519AF1;
+}
+
+.Main{
+    height:410px;
+    width: 100%;
+    margin: 0 auto;
+}
+.bgclick{
+    height:410px;
+    width: 68.5%;
+    float: left;
+    cursor:pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.MainContent {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.MainContent .main_bg {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.MainContent .u-btn-detail {
+    position: absolute;
+    left: 1px;
+    width: 170px;
+    height: 44px;
+    top: 232px;
+    font-size: 16px;
+    color:#2579d7;
+    background:#ffffff;
+    text-align: center;
+    line-height: 44px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.MainContent .u-btn-detail:hover {
+    background:#d1e6ff;
+}
+.MainR {
+    border: 1px solid #bbdaee;
+    background: #cce5f6;
+    font-size: 14px;
+    width: 260px;
+    height: 408px;
+    float: right;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.MainR .Header {
+    height:46px;
+    position: relative;
+}
+.MainR .Header div {
+    cursor: pointer;
+    width: 129.5px;
+    font-size:14px;
+    font-weight:bold;
+    float:left;
+    line-height: 44px;
+    height:44px;
+    text-align: center;
+    border: solid #bbdaee;
+}
+.MainR .Header .active {
+    border: 0;
+    color: #414141;
+}
+.MainR .Header .inactiveAdmin,.inactiveUser {
+    background: #e0eff9;
+    color: #9da8b0;
+}
+
+.MainR .Header .inactiveAdmin {
+    border-width: 0 0 1px 1px;
+}
+
+.MainR .Header .inactiveUser {
+    border-width: 0 1px 1px 0;
+}
+
+/*登陆组件区域样式 start */
+#logArea {
+    color:#888888;
+    font-size: 12px;
+    height: 288px;
+    margin-top: 15px;
+}
+
+#logArea .languagePanel {
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+#logArea .languagePanel .language {
+    margin: 0 auto 10px;
+    width: 213px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+#logArea .languagePanel .language .languageOptions {
+    cursor: pointer;
+    background-color: #cce5f6;
+    float: right;
+}
+
+#languageLabel, #languageName, #arrow {
+    display: inline;
+}
+
+#logArea .languagePanel .language .languageOptions:hover {
+    color: #666666;
+}
+#arrow img {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+
+.languages {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 121px;
+    z-index: 999;
+    opacity: 0.9;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90); /* IE6/IE7/8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; /*  IE8 */
+}
+
+.languages .arrow {
+    height: 10px;
+    background: url("arrow01.png") no-repeat bottom center;
+    z-index: 1;
+    position: relative;
+}
+
+.languages .items {
+    background: #fafcfe;
+    border: solid #d5d8db;
+    border-width: 1px 1px 0;
+    margin-top: -1px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.languages .items div {
+    border-bottom: 1px solid #d5d8db;
+    height: 40px;
+    color: #494949;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.languages .items div:hover{
+    background: #e6f2fa;
+    color: #3598db;
+}
+.s {
+    border-bottom: 1px solid #bbdaee;
+    padding-bottom: 11.5px;
+    width: 67px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logArea .inptr{
+    height:34px;
+    width: 213px;
+    border: 0;
+    margin:0 auto 10px;
+    font-weight: bold;
+}
+#logArea .inptr .blank{
+    height: 100%;
+    width: 211px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+}
+#logArea .inptr .blank .img{
+    height: 100%;
+    width: 36px;
+    padding: auto;
+    float: left;
+    text-align: center;
+}
+#logArea .inptr .blank .img img{
+    position: relative;
+    top: 9px;
+}
+#logArea .inptr .blank input{
+    border: 0;
+    width: 150px;
+    height: 34px;
+    vertical-align: middle;
+    padding: 0;
+    float: left;
+    display: block;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 34px;
+}
+#logArea .inptr .blank .delete{
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 34px;
+    left: 179px;
+    z-index: 100;
+    background: url(close.png) no-repeat center center;
+    cursor: pointer;
+}
+#logArea .inptr .blank input::-webkit-input-placeholder {
+    color: #9A9A9A
+}
+#logArea .inptr .blank input:-moz-placeholder {
+    color: #9A9A9A
+}
+#logArea .inptr .blank input::-moz-placeholder {
+    color: #9A9A9A
+}
+#logArea .inptr .blank input:-ms-input-placeholder {
+    color: #9A9A9A
+}
+#logArea .inptr .button {
+    height: 34px;
+    width: 100%;
+    border-radius: 4px;
+    background: #3598db;
+    color: #FFFFFF;
+    margin: 0 auto 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+#logArea .inptr .button:hover {
+    background: #2588cb;
+}
+
+#logArea .inptr .button:active {
+    background: #16679e;
+}
+
+#logArea .inptr .verifyCode, #vcImageTR {
+    float: left;
+    margin-right: 5px;
+}
+#logArea .inptr .verifyCode {
+    width: 80px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+#logArea .inptr .verifyCode #verifyCode{
+    border: 0;
+    width: 70px;
+    height: 100%;
+    border-radius: 4px;
+    padding: 0;
+    margin-left: 10px;
+}
+#logArea .inptr #vcImageTR {
+    height: 34px;
+}
+#logArea .inptr img#vcImage {
+    width: 79px;
+    height: 33px;
+    border: 1px solid #bbdaee;
+}
+#logArea .inptr a{
+    color: #52a3df;
+    height: 34px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#logArea .inptr .Error {
+    width: 213px;
+    height: 15px;
+    color:#FF0000;
+    margin:0 auto;
+    white-space:normal;
+    text-align: left;
+    line-height: 15px;
+    float: left;
+}
+
+#logArea .inptr .forget {
+    text-align: right;
+    color: #888888;
+    font-weight: normal;
+    float: right;
+    display: none;
+}
+
+#logArea .options {
+    margin: 0 auto 10px;
+    height: 22px;
+    width: 213px;
+}
+#logArea .options div {
+    cursor: pointer;
+}
+#logArea .options #savePwd {
+    float: left;
+}
+#logArea .options #SSL {
+    float: right;
+}
+#logArea .options .rememberPwd {
+    float: left;
+}
+#logArea .options .SSL {
+    float: right;
+}
+#logArea .options .checked,.unChecked {
+    height: 16px;
+    width: 16px;
+}
+#logArea .options .checked {
+    background: url("CheckBox.png");
+}
+#logArea .options .unChecked {
+    background: url("UnCheckBox.png");
+}
+
+#logArea .indent{
+    padding-left:90px;
+    _padding-left:92px;
+    height:auto;
+}
+
+
+.MainFooter {
+    height: 59px;
+    border: solid #cce5f6;
+    border-width: 1px 0 0;
+    background: #E6F2fb;
+}
+
+.MainFooter .content {
+    height: 31px;
+    margin: 14px;
+}
+
+.MainFooter .content .block{
+    float: right;
+    color: #ACACAC;
+    margin: 2px;
+    font-size: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* Main 区域 */
+
+/* 底部 */
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.footer {
+    width: 100%;
+}
+.footer .content {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 62px;
+}
+
+.footer .downloadList {
+    float: left;
+    margin-right: 59px;
+    margin-top: 20px;
+}
+
+.footer .downloadList a {
+    display: inline-block;
+    margin-right: 37px;
+    text-align: center;
+}
+
+.footer .downloadList a.last-1 {
+    margin-right: 19px;
+}
+
+.footer .downloadList a.last{
+    margin-right: 0;
+}
+
+.footer .downloadList a span.img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+}
+
+.footer .downloadList a span.text {
+    color:#858585;
+    display: block;
+}
+
+.footer .downloadList span.ios {
+    background: url('download-ios.png');
+}
+
+.footer .downloadList span.android {
+    background: url('download-android.png');
+}
+
+.footer .downloadList span.pc {
+    background: url('download-pc.png');
+}
+
+.footer .downloadList span.lunkr-mail {
+    background: url('pc_mail.png');
+}
+
+.footer .downloadList span.plug-in {
+    background: url('download-plug-in.png');
+}
+
+.footer .lunkr-qr {
+    float: left;
+    padding-right: 52px;
+    border-right: 2px solid #dfdfdf;
+    margin-right: 52px;
+    text-align: center;
+}
+
+.footer .lunkr-qr .img-wrapper {
+    padding: 8px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 2px;
+}
+.footer .lunkr-qr .img-wrapper > img {
+    width: 84px;
+    height: 84px;
+}
+
+.footer .lunkr-qr .img,
+.footer .wechat-qr .img {
+    width: 102px;
+    height: 102px;
+    margin-bottom: 2px;
+}
+
+.footer .lunkr-qr .text,
+.footer .wechat-qr .text {
+    color: #858585;
+}
+
+.footer .wechat-qr {
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.footer .wechat-qr .img {
+    background: url('weixin-qr-code.png');
+}
+
+.footer .sale-phone {
+    float: left;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.footer .sale-phone .text {
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.footer .sale-phone .phone-number {
+    color: #212121;
+}
+
+.new {
+    background: url("new.png") no-repeat center;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 7px;
+}
+
+.footer .copyright {
+    width: 100%;
+    height: 45px;
+    background: #e5e5e5;
+    text-align: center;
+    color: #777777;
+    line-height: 45px;
+}
+.hidden {
+    display: none;
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    width: 0;
+    height: 0;
+}
