@@ -1,0 +1,206 @@
+:root {
+/* centralized color definitions. */
+--link: #0066b3;
+--link-disabled: #d0d0d0;
+--button-bg: #0066b3;
+--button-text: white;
+--button-text-disabled: #d0d0d0;
+--button-bg-hover: #00519e;
+--button-bg-disabled: #e2e3e3;
+--alert-border: #c10c0d; 
+--alert-bg: #fff2f2;
+--alert-text: #c10c0d;
+--info-border: rgb(1, 83, 155); /* also text */
+--info-bg: rgb(217, 249, 255);
+--field-bg: #e6e6e6;
+--field-underline: #b3b2b2;
+--form-text: #474747;
+--form-bg: rgb(230,230,230);
+}
+
+h1 {
+	text-align:center;
+	font-size: 3em;
+	color: white;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#container {
+	margin: 30px auto;
+	width:	330px;
+	height:480px;
+	box-shadow: 0 0 20px #ccc;
+	padding: 40px;
+	background-color: white;
+	text-align: left;
+}
+
+.form-login{
+	background-color: var(--field-bg);
+	color: var(--form-text);
+	text-align: left;
+	font-size: 12px;
+	border-bottom: 1px solid var(--field-underline);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	/*background-image: url("MFASetup1.png");*/
+	background-position-x: center;
+	background-repeat: no-repeat;
+	background-color:#F4F3F1;
+}
+
+.form-login input{
+	display: block;
+	border-width: 0;
+	font-size: 12px;
+	color: black;
+	margin: 0px;
+	padding: 3px;
+    padding-bottom: 3px;
+	padding-bottom: 0px;
+	background-color: var(--field-bg);	
+	width: 100%;
+}
+.form-login input:focus {
+    outline: none;
+}
+
+input.mfa-field {
+	width: calc(100% - 32px);
+	display: inline-block;
+}
+
+div.mfaReveal, div.mfaHide {
+   width: 20px;
+   height: 20px;
+   margin-top: -4px;
+   background-image: url("show_password.png");
+   display: inline-block;
+   float: right;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+div.mfaReveal:hover, div.mfaHide:hover {
+	cursor: pointer;
+} 
+div.mfaHide {
+	background-image: url("hide_password.png")
+}
+
+.form-link a {
+	font-size: 14px;
+	text-decoration: none;
+	text-align:center;
+	color: var(--link);
+}
+
+.form-link {
+	text-align:center;
+}
+
+.form-link a:hover {
+	text-decoration: underline;
+}
+
+.form-link a.disabled {
+    pointer-events: none;
+    color: var(--link-disabled);
+}
+
+h2 {
+	text-align:center;
+	font-size: 2.2em;
+	font-weight: normal;
+	padding-bottom: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+div.information, div.alert {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    valign-text: middle;
+    padding: 5px 5px 5px 34px;
+    background-repeat: no-repeat;
+    background-position: 9px center;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 32px;
+    margin-bottom: 20px;
+}
+
+div.information {
+    border: 1px solid var(--info-border);
+    background-color: var(--info-bg);
+    background-image: url(icon-info.png);
+    color: var(--info-border);
+}
+
+div.alert {
+    border: 1px solid var(--alert-border);
+    background-color: var(--alert-bg);
+    background-image: url(icon-warning.png);
+    color: var(--alert-text);
+  
+}
+
+.blue-button input {
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	border: none;
+	box-shadow: 0 0 2px grey;
+	border-radius: 2px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	font-size: 14px;
+	margin: 30 auto;
+	margin-bottom: 0px;
+}
+
+.blue-button input:hover {
+	background-color: var(--button-bg-hover);
+}
+
+.blue-button input:disabled {
+	background-color: var(--button-bg-disabled);
+	color: var(--button-text-disabled);
+}
+
+@media only screen and (max-device-width: 424px) and (orientation: portrait){
+	#container{
+	width: 90%;
+	height:400px;
+    padding: 5%;
+	}
+	
+	.form-login {
+	font-size: 17px;
+	padding: 10px;
+	margin-bottom: 30px;
+	}
+	
+	.form-login input{
+	font-size: 18px;
+	margin-top: 10px;
+	}
+	
+	.blue-button input {
+	font-size: 20px;
+	}
+	
+	*:focus {
+    outline: none !important;
+}
+}
