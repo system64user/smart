@@ -1,0 +1,21 @@
+.footer_border {
+	border-top:1px solid #E6E6E6;
+	margin-top:25px;
+	padding-bottom:5px;
+}
+.footer_left {
+	width:640px;
+	margin-right:15px;
+}
+.footer_center {
+	width:100px;
+}
+.footer_mar {
+	margin-top:6px;
+}
+.fborder {
+	background:transparent url('/a/bmid/img/footer_border.gif') repeat-y scroll 640px 0px;
+}
+ul.footer_col li {
+	margin-bottom:7px;
+}

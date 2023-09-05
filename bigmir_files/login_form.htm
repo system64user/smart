@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<title>Facebook Login</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        }
+
+    body {
+        font-family: 'PT Sans', Tahoma;
+        }
+
+    .b-login__social-btn {
+        display: block;
+        position: relative;
+        width: 140px;
+        padding: 6px;
+        border: 0;
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1;
+        color: #fff;
+        }
+        .b-login__social-btn:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            
+            background: url(//i.bigmir.net/a/common/img/login-social.png) no-repeat;
+            
+            }
+        .b-login__social-btn_vk {
+            background: #4f7197;
+            }
+            .b-login__social-btn_vk:before {
+                width: 12px;
+                height: 21px;
+                background-position: 0 -21px;
+                }
+    </style>
+
+</head>
+<body>
+
+
+
+<div id="vk_api_transport" style="position: absolute; top: -10000px;"><script type="text/javascript" src="login_form_data/openapi.js" async=""></script></div>
+
+
+    <script>
+        if (typeof( window.vkAsyncInit) != "undefined" && typeof(window.vkLoginButtonRendered) == "undefined") {
+            window.vkLoginButtonRendered = true;
+        }
+        if (typeof( window.vkAsyncInit) == "undefined") {
+            window.vkAsyncInit = function () {
+                VK.init({
+                    apiId: 2438540, 
+                    nameTransportPath: "/xd_receiver.htm"
+                });
+
+                window.vkLoginButtonRendered = true;
+            };
+
+            setTimeout(function () {
+                var el = document.createElement("script");
+                el.type = "text/javascript";
+                el.src = "//vkontakte.ru/js/api/openapi.js";
+                el.async = true;
+                document.getElementById("vk_api_transport").appendChild(el);
+            }, 0);
+        }
+
+        function authInfo(response) {
+            if (response.session) {
+                setTimeout(function () {
+                    var el = document.createElement("script");
+                    el.type = "text/javascript";
+                    el.src = "//id.bigmir.net/vk/vk_auth?url=http://id.bigmir.net/&fast=0";
+                    
+                    el.async = true;
+                    document.getElementById("vk_api_transport").appendChild(el);
+                }, 0);
+            } else {
+                //		    alert("not auth");
+            }
+        }
+
+    </script>
+
+
+</body></html>
