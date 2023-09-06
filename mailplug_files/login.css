@@ -1,0 +1,87 @@
+/* step1 : PC 화면 */
+
+/* Spoqa Han Sans Neo 폰트 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* reset */
+*{
+    /* -webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	-webkit-text-size-adjust:none;
+	box-sizing: border-box; */
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+  font-family:'Spoqa Han Sans Neo','Poppins','AppleSDGothic','apple sd gothic neo','noto sans korean','Noto Sans KR','noto sans cjk kr','noto sans cjk','nanum gothic','malgun gothic','dotum',arial,helvetica,'MS Gothic',sans-serif!important
+}
+html,body{margin:0px;}
+ol, ul{list-style:none;}
+a{text-decoration:none;}
+p, input{font-family:'Spoqa Han Sans Neo','Poppins','AppleSDGothic','apple sd gothic neo','noto sans korean','Noto Sans KR','noto sans cjk kr','noto sans cjk','nanum gothic','malgun gothic','dotum',arial,helvetica,'MS Gothic',sans-serif; margin:0; color:#241E17;}
+button{cursor:pointer;}
+
+/* iconfont : (공통) 사이즈 */
+.isiz24{font-size:24px;}
+.isiz18{font-size:18px;}
+
+
+body{background-color: #FFF; }
+
+/* login */
+.login_wrapper{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); width: 100%;}
+.login_wrapper-content{width:360px; height:100%; margin:0 auto; padding:20px 50px 40px; background-color:#ffffff; border-radius:8px;}
+
+/* logo */
+.logo{width:100%; font-weight:700; font-size:28px; padding-bottom:70px;text-align: center;}
+.logo p{padding-top: 70px; color:#757575;}
+.logo .logo-image, 
+.logo .logo-text{position: absolute; left: 50%; transform: translateX(-50%); height:50px;}
+.logo .logo-image img{height:100%;}
+.logo .logo-text span{line-height: 60px; font-size: 42px; color: #241E17;}
+
+/* input : toast > error */
+.input_toast-error{display:flex; align-items: center; padding:8px 12px 8px 8px; margin-top:10px; border-radius:4px; color:#F50202; background-color: #FFF1EA;}
+.input_toast-error p{font-size:14px; line-height:22px; color: #241E17;}
+.input_toast-error img{padding-top:2px; padding-right:8px;}
+.input_toast-error i{font-size:18px; padding-right:8px;}
+
+/* input : 이메일or도메인 */
+.input_id{width:100%; height:56px; padding-bottom: 10px;}
+.input_id input{width:100%; height:56px; box-sizing:border-box; border:none; outline: none; border-bottom: 2px solid #E9E9E9; font-size:16px; line-height:24px; color:#241E17}
+.input_id input::placeholder{color:#C7C7C7}
+.input_id input:focus{border-bottom: 2px solid #241E17; outline:none;}
+
+/* button : 확인 */
+.login_btn{margin-top: 30px;}
+.login_btn .button{width:100%; padding:0; line-height:56px; border: none; border-radius:4px; outline:none; background-color: #241E17; color: #FFF; font-size: 16px; font-weight: 500; text-align: center; cursor:pointer;}
+
+/* 로그인 설명 */
+.login_des p{margin-top: 30px; font-size: 14px; color: #999999; line-height: 22px; text-align: center;}
+
+
+/* footer(copyright, 다국어) */
+.login-footer{display: flex; justify-content: center; align-items: center; position: fixed; bottom: 0; left: 0; right: 0; height: 80px;}
+.footer-copyright{ margin-right: 30px;}
+.footer-copyright p{font-family:'Poppins'!important; font-weight:275; font-size:12px; line-height:18px; color:#757575; text-align:center;}
+.mb-auto-bg-box2 .lang_select_box{position:relative;padding:0;width:100%;margin-top: 45px;text-align:right;color:#B9BAB6;font-size:12px; letter-spacing:-0.5px;}
+.mb-auto-bg-box2 .custom_select{position:relative; width:126px; height:100%; font-family:'Spoqa Han Sans Neo', 'Spoqa Han Sans Neo JP'; font-size:12px; line-height:18px; border:1px solid #F2F2F2; border-radius:8px; color:#241E17; background-color:#fff; padding:7px 12px; outline:none;z-index:1;opacity:1;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.mb-auth-lang-selector{position: relative; font-family:'Spoqa Han Sans Neo', 'Spoqa Han Sans Neo JP'; box-sizing:border-box; line-height:32px; color:#241E17; background:#FFFFFF; min-height:32px; z-index:10;*behavior:url(/asset/wm60/js/boxsizing.htc);}
+.mb-auth-lang-selector span{font-size:12px; color:#241E17;}
+.mb-auth-lang-selector span img{width:16px; height:16px; padding-left: 10px; vertical-align:sub;}
+.mb-auth-lang-selector div.mb-auth-lang{display:flex; justify-content:space-between; align-items:center; font-size:12px; line-height:32px;padding: 0 12px; cursor:pointer;}
+.mb-auth-lang-selector div.mb-auth-lang a{font-size:12px;}
+.mb-auth-lang-selector div#mb-auth-lang-slider{display:none; position: absolute; top: -258px; right: 0; width: 148px; background-color: #FFF; border: 1px solid #E9E9E9; border-radius: 4px;}
+.mb-auth-lang-selector div#mb-auth-lang-slider .mb-auth-lang:hover{background-color:#F7F7F7}
+.mb-auth-lang-selector div > a{color:#241E17;}
+
+
+
+/* 접근 차단 화면 */
+.login_access_screen{text-align: center;}
+.access_screen_content img{height:300px; padding-bottom:25px;}
+.access_screen_content .access_content_txt{width:586px; margin:0 auto; padding-bottom:45px; text-align:center;}
+.access_screen_content p{font-weight:400; font-size:16px; line-height:24px; padding-bottom:5px;	text-align:center;}
+.access_screen_content p:nth-child(2){font-family:'Poppins'; font-weight:275; font-size:16px; line-height:24px; text-align:center;}
+
+/* button : 이전 단계*/
+.access_screen_content button{width:320px; font-weight:500; font-size:14px; line-height:16px; color:#241E17; border:1px solid #241E17; border-radius:4px; background-color:transparent; padding:12px 16px;}
