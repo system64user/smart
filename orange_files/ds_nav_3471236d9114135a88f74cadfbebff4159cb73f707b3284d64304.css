@@ -1,0 +1,249 @@
+/*
+
+Used for: NN4/Windows and all Mozilla clients
+ 
+Don't bother setting BODY rule.  Shouldn't be used in DanaStreet pages, and
+Netscape has trouble dealing with it anyway.
+body { font-size: small; font-family: verdana, arial, helvetica, sans-serif; }
+*/
+
+td   { font-size: small; font-family: verdana, arial, helvetica, sun-sans, sans-serif; }
+kbd	 { font-size: small; font-family: courier, serif; }
+
+/* NN4 ONLY!  We must specifically set font sizes for the various Heading elements,
+   because Netscape 4 doesn't size them appropriately when there is a BODY or TD rule
+   with the font-size selector.  We set them to values that are nearly what they would
+   have been normally. (Except H3-H6, which would be medium, small, small, and x-small,
+   which we set to medium */
+h1 { font-size: x-large; font-family: verdana, arial, helvetica, sans-serif; }
+h2 { font-size: large; font-family: verdana, arial, helvetica, sans-serif;   }
+h3 { font-size: medium; font-family: verdana, arial, helvetica, sans-serif;  }
+h4 { font-size: medium; font-family: verdana, arial, helvetica, sans-serif;  }
+h5 { font-size: medium; font-family: verdana, arial, helvetica, sans-serif;  }
+h6 { font-size: medium; font-family: verdana, arial, helvetica, sans-serif;  }
+
+/* header hyperlink styles */
+.cssTopNavLnk		{ font-size: x-small; color:#FFFFFF; text-decoration:none; }
+.cssTopNavLnk:hover	{ font-size: x-small; color:#FFFFFF; text-decoration:underline; }
+
+/* left nav hyperlink styles */
+.cssLeftNavLnk		{ font-size: x-small; color:#000000; text-decoration:none; }
+.cssLeftNavSel		{ font-size: x-small; color:#000000; text-decoration:none; }
+.cssLeftNavLnk:hover{ font-size: x-small; color:#663300; text-decoration:underline; }
+
+/* tabbed page hyperlink styles */
+.cssTabLnk			{ color:#000000; text-decoration:none; }
+.cssTabLnk:hover	{ color:#000000; text-decoration:underline; }
+
+/* column header hyperlink styles */
+.cssColHeaderLnk		{ color:#333333; }
+.cssColHeaderLnk:hover	{ color:#003399; }
+
+/* fixed-color link */
+.cssFixedLnk		{ font-size: x-small; color:#666699; text-decoration:none; }
+.cssFixedLnk:hover	{ font-size: x-small; color:#666699; text-decoration:underline; }
+
+/* custom headers */
+.cssNavTitle	{ font-size: medium; color:#FFFFFF; }
+.cssPgTitle		{ font-size: medium; color:#000000; }
+.cssLarge		{ font-size: large; }
+
+/* small text */
+.cssSmall		{ font-size: x-small }
+.cssSmallGray	{ font-size: x-small; color: #999999;  }
+.cssSmallWhite	{ font-size: x-small; color: #FFFFFF;  }
+.cssSmallBeige	{ font-size: x-small; color: #CCCC99;  }
+
+/* path */
+.cssPath		{ font-size: medium; }
+
+/* styles for secondary windows */
+.cssDlgTitle		{ font-size: small; color:#FFFFFF; }
+.cssDlgText			{ font-size: x-small; color: #9999CC; }
+.cssDlgLnk			{ font-size: x-small; color: #CCCCFF; text-decoration:none; }
+.cssDlgLnk:hover	{ font-size: x-small; color: #CCCCFF; text-decoration:underline; }
+
+/* session manager styles */
+.cssSessionMgrLnk		{ font-size: x-small; color: #CCCCCC; text-decoration:underline; }
+.cssSessionMgrLnk:hover	{ font-size: x-small; color: #CCCCFF; text-decoration:underline; }
+.cssSessionMgrTabLnk	{ font-size: small; color: #999999; text-decoration:none; }
+.cssSessionMgrTabLnk:hover	{ font-size: small; color: #CCCCFF; text-decoration:underline; }
+.cssAppError			{ font-size:x-small; color:#FF6666; }
+.cssAppWarning			{ font-size:x-small; color:#FFFF66; }
+
+/* better looking textarea */
+.cssNiceTextArea        { padding: 5px; font-size: small; font-family: verdana, arial, helvetica, sans-serif; }
+
+/* For security warnings. For example, when javascript is disabled */
+.cssSecurityWarning     { font-size: medium; font-family: verdana, arial, helvetica, sans-serif; color: #AA0000; background: #FFFFCC; }
+
+.cssLoginPrompt         { font-family: arial; }
+
+.cssSelectedTab { background-color: #666666; }
+.cssNonSelectedTab { background-color: #CCCCCC; }
+
+.msg_padding {
+    padding-right: 15px;
+}
+
+ul.start_button {
+    padding: 5px;
+    margin: 0px 0;
+    list-style: none;
+    float: left;
+}
+ 
+ul.start_button li {
+    float: left;
+    display: inline; /*For ignore double margin in IE6*/
+    margin: 0 10px;
+	
+	
+}
+ 
+ul.start_button li a {
+    text-decoration: none;
+    float:left;
+    color: #fff;
+    cursor: pointer;
+    font: 900 16px/30px Helvetica, Arial, sans-serif;
+	background: url(/dana-na/imgs/start_button.jpg) no-repeat;
+	background-position:right 0px;
+	
+}
+ 
+ul.start_button li a span {
+    margin: 0 10px 0 -10px;
+   padding-left:10px;
+    position: relative; /*To fix IE6 problem (not displaying)*/
+    float:left;
+	background: url(/dana-na/imgs/start_button.jpg) no-repeat;
+}
+
+ul.start_button li a.current, ul.start_button li a:hover {
+    background: url(/dana-na/imgs/start_button.jpg) no-repeat;
+	background-position:right -30px;
+    color: #fff;
+}
+ 
+ul.start_button li a.current span, ul.start_button li a:hover span {
+    background: url(/dana-na/imgs/start_button.jpg) no-repeat;
+	background-position:0px -30px;
+}
+
+ul.disabled_button {
+    padding: 5px;
+    margin: 0px 0;
+    list-style: none;
+    float: left;
+}
+
+ul.disabled_button li {
+    float: left;
+    display: inline; /*For ignore double margin in IE6*/
+    margin: 0 10px;
+
+
+}
+
+ul.disabled_button li a {
+    text-decoration: none;
+    float:left;
+    color: #fff;
+    font: 900 16px/30px Helvetica, Arial, sans-serif;
+        background: url(/dana-na/imgs/disabled_button.jpg) no-repeat;
+        background-position:right 0px;
+
+}
+
+ul.disabled_button li a span {
+    margin: 0 10px 0 -10px;
+   padding-left:10px;
+    position: relative; /*To fix IE6 problem (not displaying)*/
+    float:left;
+        background: url(/dana-na/imgs/disabled_button.jpg) no-repeat;
+}
+
+ul.disabled_button li a.current, ul.disabled_button li a:hover {
+    background: url(/dana-na/imgs/disabled_button.jpg) no-repeat;
+    background-position:right 0px;
+    cursor: default;
+    color: #fff;
+}
+
+ul.disabled_button li a.current span, ul.disabled_button li a:hover span {
+    background: url(/dana-na/imgs/disabled_button.jpg) no-repeat;
+    background-position:0px 0px;
+    cursor: default;
+}
+
+ul.blue_large_button {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(55, 124, 192);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: inline-block;
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    height: 38.390625px;
+    line-height: 38.4000015258789px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition-duration: 0.3s;
+    transition-property: background;
+    vertical-align: middle;
+    width: 170px;
+}
+
+ul.green_heading {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(103, 189, 82);
+    cursor: default;
+    display: inline-block;
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 30px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-rendering: auto;
+}
