@@ -1,0 +1,321 @@
+.login {
+    width: 295px;
+}
+
+.g-bd {
+    width: 386px;
+    padding-bottom: 36px;
+    overflow: visible;
+}
+
+.cnt-box-include {
+    padding-top: 38px;
+}
+
+.w-exception-normal .cnt .note {
+    font-size: 18px;
+}
+
+.m-cnt {
+    padding: 0;
+    width: 386px;
+}
+
+.headimg {
+    display: none;
+}
+
+.m-header {
+    padding: 0;
+    margin: 0;
+}
+
+.m-footer {
+    display: none;
+}
+
+.fur-change-email {
+    height: 32px;
+    line-height: 32px;
+    font-size: 0;
+}
+
+.m-cnt #login-form .m-ckcnt {
+    margin-top: 32px;
+}
+
+.u-loginbtn {
+    background: #2BA030;
+    border-radius: 4px;
+}
+
+.u-loginbtn:hover {
+    background: #077e3f;
+}
+
+.u-loginbtn:active {
+    color: white;
+    background: #16864a;
+}
+
+.w-exception {
+    width: 100%;
+}
+
+.w-exception .cnt {
+    width: 342px;
+    padding: 40px 22px 58px;
+}
+
+.w-exception-normal .cnt {
+    width: 342px;
+    padding: 40px 22px 58px;
+}
+
+input::-webkit-input-placeholder {
+    color: #DBDBDB;
+}
+
+input:-moz-placeholder {
+    color: #DBDBDB;
+}
+
+/* 十天内登录 */
+.m-cnt .m-unlogin .b-unlogn {
+    display: none;
+    float: left;
+    border-right: none;
+    width: 110px;
+}
+
+.m-cnt .m-unlogin .b-unlogn label {
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+}
+
+.m-cnt .m-nerror {
+    margin-top: 12px;
+}
+
+.m-cnt .m-nerror .ferrorhead {
+    margin-left: 6px;
+    font-size: 12px;
+    color: #CC0000;
+}
+
+.m-cnt .u-input input {
+    padding-left: 14px;
+    width: 273px !important;
+    height: 50px;
+    line-height: 50px;
+}
+
+.m-cnt .u-logo div {
+    margin-top: 14px;
+}
+
+.m-cnt .u-success {
+    margin-top: 14px;
+}
+
+.m-cnt .u-logo {
+    display: none;
+}
+
+.m-cnt .u-logo .u-logo-img1 {
+    background: url("https://mimg.127.net/p/freemail/index/lib/img/urs/ico-user-yeah.png") no-repeat; /* TODO: 使用绝对链接 */
+}
+
+.m-cnt .u-logo .u-logo-img2 {
+    background: url("https://mimg.127.net/p/freemail/index/lib/img/urs/ico-password-yeah.png") no-repeat; /* TODO: 使用绝对链接 */
+}
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+}
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox-select {
+    width: 16px;
+    height: 16px;
+    background: url("https://mimg.127.net/p/freemail/index/lib/img/urs/ico-checked-blue.png") no-repeat;
+}
+
+/* 调整登录按钮 */
+.loginbox {
+    margin-top: 0;
+    margin-bottom: -22px;
+}
+
+.loginbox .u-loginbtn {
+    position: absolute;
+    bottom: 0px;
+    width: 386px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border: none;
+    /* margin-bottom: 36px; */
+}
+
+.m-cnt .m-unlogin {
+    /* margin-top: 12px; */
+    padding-bottom: 42px;
+    font-size: 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+/* 忘记密码 */
+.m-cnt .m-unlogin .forgetpwd {
+    float: right;
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* 去注册按钮 */
+.m-cnt .m-unlogin .u-regbtn {
+    display: none;
+}
+
+.m-cnt .m-unlogin .u-regbtn.bgcolor {
+    position: absolute;
+    left: 156px;
+    bottom: -46px;
+    color: #3B78DD;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.m-cnt .m-unlogin .u-regbtn.bgcolor:hover {
+    color: #0348ba;
+}
+
+.m-cnt .m-unlogin .u-regbtn.bgcolor:active {
+    color: #3B78DD;
+}
+
+.m-cnt .inputbox {
+    /* min-width: 386px; */
+    border-color: #999;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.m-cnt .inputbox.active {
+    border-color: #3B78DD;
+}
+
+
+/* 忘记密码样式 */
+.m-cnt .m-unlogin .forgetpwd:hover {
+    color: #2476ce;
+}
+
+.m-cnt .m-unlogin .forgetpwd:active {
+    color: #317ed1;
+}
+
+.m-cnt .pr-domain {
+    right: -86px !important;
+    top: 8px;
+	color: #666;
+}
+
+/* 二次登录页面按钮样式修改 */
+/* 左按钮 */
+.u-btn.bgcolor {
+    height: 44px;
+    line-height: 44px;
+    color: #3B78DD;
+    border: 1px solid #a7d4bd;
+    border-radius: 4px;
+    background: #E6F3EC;
+}
+
+.u-btn.bgcolor:hover {
+    background: #cee7da;
+}
+
+.u-btn.bgcolor:active {
+    background: #daede3;
+}
+
+/* 右按钮 */
+.btncolor {
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #3B78DD;
+}
+
+.btncolor:hover {
+    background: #0348BA;
+}
+
+.btncolor:active {
+    background: #317ed1;
+}
+
+/* 手机二次验证 */
+#phonecheck-box .m-cnt .inputbox {
+    height: 44px;
+}
+
+.m-cnt .u-input input::-webkit-input-placeholder {
+    color:#657786;
+}
+.m-cnt .u-input input:-moz-placeholder {
+    color:#657786;
+}
+.m-cnt .u-input input::-moz-placeholder {
+    color:#657786;
+}
+.m-cnt .u-input input:-ms-input-placeholder {
+    color:#657786;
+}
+.m-cnt .u-input input::placeholder {
+    color:#657786;
+}
+
+.m-cnt .u-input input:focus::-webkit-input-placeholder {
+    color:#a2adb6;
+}
+.m-cnt .u-input input:focus:-moz-placeholder {
+    color:#a2adb6;
+}
+.m-cnt .u-input input:focus::-moz-placeholder {
+    color:#a2adb6;
+}
+.m-cnt .u-input input:focus:-ms-input-placeholder {
+    color:#a2adb6;
+}
+.m-cnt .u-input input:focus::placeholder {
+    color:#a2adb6;
+}
+
+/* 二次验证 */
+.m-cnt .m-pc .pcin {
+    width: 130px !important;
+}
+
+.m-cnt .pcbtn .getsmscode {
+    height: 52px;
+    line-height: 52px;
+}
+
+.m-cnt .m-nerror .ferrorhead, .m-cnt .m-nerror .ferrorhead2, .m-cnt .m-nerror .ferrorhead3, .m-cnt .m-nerror .ferrorhead4 {
+    widows: 288px;
+}
+/* .m-cnt .m-nerror .ferrorhead2 {
+    display: none;
+}
+
+.m-cnt .m-nerror .ferrortail3 {
+    display: none;
+} */
